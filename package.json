@@ -1,0 +1,58 @@
+{
+  "name": "dsh-subagent-route",
+  "version": "0.0.1",
+  "description": "DeepSeek Harness 插件：让用户在会话里用一句话指定下一次子代理派发的模型与思考程度；用户没说时，原有继承机制分毫不动。",
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "subagent",
+    "model-routing",
+    "reasoning-effort"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "main": "lib/index.js",
+  "icon": "icon.svg",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./locale/*.json": "./locale/*.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/matcher.js",
+    "lib/message.js",
+    "lib/route.js",
+    "lib/client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "LICENSE",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "test": "node --test"
+  },
+  "dependencies": {
+    "@deepseek-ai/schemastery": ">=3.18.1 <4.0.0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-settings",
+        "@deepseek-ai/dsh-client-ui-plugin-manager"
+      ]
+    }
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

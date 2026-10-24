@@ -1,0 +1,10 @@
+# dsh-subagent-route bundle patch.
+#
+# One host row. It registers the `dsh-subagent-route` settings namespace (the
+# plugin's own Config) and wraps `ctx.subagents.startActivation`, so a route the
+# user names in conversation applies to every delegation path — the stock
+# `subagent` / `subagent_fork` tools, workflow agents, and teammates — while a
+# delegation the user did not describe keeps inheriting exactly as before.
+- insert:
+    - id: dsh-subagent-route
+      name: 'dsh-subagent-route'

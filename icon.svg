@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Subagent route">
+  <title>Subagent route</title>
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="#1f6feb"/>
+  <path d="M16 22h12a6 6 0 0 1 6 6v8a6 6 0 0 0 6 6h8" fill="none" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round"/>
+  <circle cx="16" cy="22" r="5" fill="#ffffff"/>
+  <circle cx="48" cy="42" r="5" fill="#ffffff"/>
+  <circle cx="32" cy="14" r="4" fill="#9ecbff"/>
+  <path d="M32 18v10" fill="none" stroke="#9ecbff" stroke-width="3" stroke-linecap="round"/>
+</svg>

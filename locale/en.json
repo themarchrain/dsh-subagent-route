@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Subagent route",
+    "description": "Reads a model and thinking level the user names in conversation and applies them to the next subagent delegation; silence keeps the inherited route."
+  }
+}
